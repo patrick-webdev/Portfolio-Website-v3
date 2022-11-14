@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_uri'] = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/";
-$config['base_uri'] .= "portfolio/"; //FOR LOCALHOST
+$config['base_uri'] .= "Portfolio-Website-v3/"; //FOR LOCALHOST
 $config['base_url'] = $config['base_uri'] . 'index.php';
 
 /*
