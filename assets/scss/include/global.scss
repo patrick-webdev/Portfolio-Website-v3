@@ -1,0 +1,85 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: $text;
+    font-size: $mediumFont;
+    &::selection{
+        background-color: #BBA4E5;
+    }
+}
+
+body{
+    background-color: $primary;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+#bodyContainer{
+    padding: 0 $side-padding
+}
+
+a{
+    color:$text;
+
+    &:hover{
+        color: $link;
+    }
+}
+
+section{
+    padding: $vertical-padding $side-padding;
+
+    &:first-of-type{
+        padding-top: calc($vertical-padding*1.7);
+    }
+}
+
+.link--color{
+    color: $link
+}
+
+.link--underline{
+    text-decoration: underline !important;
+}
+
+.primary{
+    background-color: $primary;
+}
+
+.light{
+    background-color: $light;
+}
+
+.dark{
+    background-color: $dark;
+}
+
+.smFont{
+    font-size: $smallFont
+}
+
+.mdFont{
+    font-size: $mediumFont;
+}
+
+.lgFont{
+    font-size: $largeFont;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.noStyle{
+    font-weight: normal !important;
+    font-style: normal !important;
+    text-decoration: none !important;
+}
+
+.italic{
+    font-style: italic
+}
+
+.underline{
+    text-decoration: underline;
+}

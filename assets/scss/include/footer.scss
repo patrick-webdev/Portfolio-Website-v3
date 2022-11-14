@@ -1,0 +1,22 @@
+footer{
+    background-color: $light;
+    text-align: center;
+    padding: 1rem 0;
+
+    a{
+        //padding: 0 .75rem;
+    }
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.contactLink{
+    padding: 0 .75rem;
+
+    i:hover{
+        color: $link;
+    }
+}

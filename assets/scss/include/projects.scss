@@ -1,0 +1,71 @@
+#projectsIntro{
+    .tool{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &__logo {
+            height: 4.5rem;
+            width: 4.5rem;
+            background-color: $light;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 40px;
+            }
+        } 
+    }
+}
+
+#projectSearchBar{
+    padding: 0 $side-padding;
+
+    #searchBar{
+        background-color: $light;
+        border-radius: 35px;
+        padding-left: 1rem;
+        
+        button{
+          height: 100%;  
+          background-color: transparent;
+          border: none;
+        }
+        input{
+            width: calc(100% - 40px);
+            background-color: transparent;
+            border: none;
+            padding: {
+                left: 0;
+                right: 1rem;
+                top: 1rem;
+                bottom: 1rem;
+            }
+
+            &::placeholder{
+                color: $text;
+                opacity: 1;
+            }
+
+            &:focus-visible{
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}
+
+#projects{
+    .project{
+        border-radius: 40px;
+        background: $light;
+        padding: 2rem;
+        &__seeMore{
+            margin-bottom: 0;
+        }
+        margin-bottom: 1.5rem;
+
+    }
+}

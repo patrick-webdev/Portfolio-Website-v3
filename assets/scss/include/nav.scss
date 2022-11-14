@@ -1,0 +1,24 @@
+#nav{
+    position: fixed;
+    // top: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 1rem $side-padding;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a{
+        font-size: $largeFont;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    #nav__right a{
+        margin-left: 1.5rem;
+    }
+}

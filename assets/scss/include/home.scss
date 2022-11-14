@@ -1,0 +1,39 @@
+#bio{
+    display: flex;
+    align-items: center;
+
+    p{
+        display: flex;
+    }
+
+    #headshotContainer{
+        display: flex;
+        justify-content: center;
+        
+        #headshot{
+            height: 195px;
+        }
+    }
+    
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #age{
+            display: contents;
+        }
+    }
+}
+
+#featuredProjects{
+    img{
+        height: 333px;
+        width: 333px;
+        object-fit: cover;
+        border-radius: 40px;
+        //border: 1px solid black
+        margin-bottom: 1rem;
+    }
+}
