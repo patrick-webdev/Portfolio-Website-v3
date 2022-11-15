@@ -42,7 +42,7 @@
                     echo "<div class='project' data-tags='";
                     foreach($project[0] as $tag){ echo $tag . "|";}
                     echo "'>";
-                    echo "<p class='project__title lgFont underline'>" . $project["title"] . "</p>";
+                    echo "<p class='project__title lgFont'>" . $project["title"] . "</p>";
                     echo "<p class='project__desc'>" . $project["description"] . "</p>";
                     echo "<p class='project__seeMore'><a href='" . $project["url"] . "' class='link--color' target='_blank'>See more...</a></p>";
                     echo "</div></div>";

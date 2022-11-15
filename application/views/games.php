@@ -8,7 +8,8 @@
                     <div class="col-4">
                         <div class="game">
                             <img src="<?= config_item('base_uri') ?>assets/img/<?= $game["img"] ?>" alt="">
-                            <p><span class="bold lgFont"><?= $game["title"] ?> (<?= $game["year"] ?>)</span> <?= $game["description"] ?></p>
+                            <p><span class="bold lgFont"><?= $game["title"] ?> (<?= $game["year"] ?>)</span></p>
+                            <p><?= $game["description"] ?></p>
                             <p><a href="<?= $game["url"] ?>" class="underline link--color" target='_blank'>Download</a></p>
                             <p class="game__myRoles">My roles:</p>
                             <ul>
