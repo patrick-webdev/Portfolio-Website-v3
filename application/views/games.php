@@ -1,6 +1,6 @@
 <section id="games">
     <div class="container--fluid">
-        <div class="row align-items-center">
+        <div class="row justify-content-center">
             <?php
                 foreach($games as $game){
                     ?>
