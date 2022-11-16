@@ -1,6 +1,6 @@
 * {
   font-family: "Montserrat", sans-serif;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   font-size: 16px;
 }
 *::-moz-selection {
@@ -20,6 +20,11 @@ body {
 #bodyContainer {
   padding: 0 9%;
 }
+@media (max-width: 991px) {
+  #bodyContainer {
+    padding: 0 2%;
+  }
+}
 
 a {
   color: #FFFFFF;
@@ -31,12 +36,17 @@ a:hover {
 section {
   padding: 4.5rem 9%;
 }
+@media (max-width: 991px) {
+  section {
+    padding: 4.5rem 2%;
+  }
+}
 section:first-of-type {
   padding-top: 7.65rem;
 }
 
 .link--color {
-  color: #EFD079;
+  color: #EFD079 !important;
 }
 
 .link--underline {
@@ -52,7 +62,7 @@ section:first-of-type {
 }
 
 .dark {
-  background-color: #191E2A;
+  background-color: #191E2A !important;
 }
 
 .smFont {
@@ -104,6 +114,11 @@ section:first-of-type {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 991px) {
+  #nav {
+    padding: 1rem 2%;
+  }
+}
 #nav a {
   font-size: 20px;
   text-decoration: none;
@@ -113,6 +128,38 @@ section:first-of-type {
 }
 #nav #nav__right a {
   margin-left: 1.5rem;
+}
+#nav .navbar-toggler {
+  outline: transparent;
+  outline-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+}
+#nav .navbar-toggler:focus {
+  outline: transparent;
+  outline-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+}
+#nav .navbar-toggler:focus-visible {
+  outline: transparent;
+  outline-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+}
+#nav .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+#nav #navbarToggler {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+#nav #navbarToggler .navbar-nav {
+  margin: 0 !important;
 }
 
 footer {
@@ -125,6 +172,9 @@ footer {
 }
 .contactLink {
   padding: 0 0.75rem;
+}
+.contactLink i {
+  font-size: 20px;
 }
 .contactLink i:hover {
   color: #EFD079;
@@ -214,6 +264,11 @@ footer {
 #projectSearchBar {
   padding: 0 9%;
 }
+@media (max-width: 991px) {
+  #projectSearchBar {
+    padding: 0 2%;
+  }
+}
 #projectSearchBar #searchBar {
   background-color: #6B707E;
   border-radius: 35px;
@@ -279,8 +334,16 @@ footer {
 #games .game {
   background-color: #6B707E;
   border-radius: 40px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 65%;
   margin-bottom: 4rem;
+}
+@media (max-width: 991px) {
+  #games .game {
+    width: 90%;
+  }
 }
 #games .game img {
   width: 100%;

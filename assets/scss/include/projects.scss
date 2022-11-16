@@ -22,6 +22,9 @@
 
 #projectSearchBar{
     padding: 0 $side-padding;
+    @media(max-width: $mobile-max){
+        padding: 0 $side-padding-mobile;
+    }
 
     #searchBar{
         background-color: $light;

@@ -16,6 +16,10 @@ footer{
 .contactLink{
     padding: 0 .75rem;
 
+    i{
+        font-size: $largeFont;
+    }
+
     i:hover{
         color: $link;
     }

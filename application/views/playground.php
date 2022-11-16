@@ -3,7 +3,7 @@
         <div class="row">
             <?php
                 foreach($projects as $project){
-                    echo "<div class='col-6'>";
+                    echo "<div class='col-12 col-md-6'>";
                     echo "<div class='project'>";
                     echo "<p class='project__title lgFont'>" . $project["title"] . "</p>";
                     echo "<p class='project__desc'>" . $project["description"] . "</p>";

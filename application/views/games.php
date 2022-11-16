@@ -1,11 +1,11 @@
 <section id="games">
     <div class="container--fluid">
-        <div class="row">
+        <div class="row align-items-center">
             <?php
                 foreach($games as $game){
                     ?>
 
-                    <div class="col-4">
+                    <div class="col-12 col-md-6 col-xxl-4 d-flex justify-content-center">
                         <div class="game">
                             <img src="<?= config_item('base_uri') ?>assets/img/<?= $game["img"] ?>" alt="">
                             <p><span class="bold lgFont"><?= $game["title"] ?> (<?= $game["year"] ?>)</span></p>

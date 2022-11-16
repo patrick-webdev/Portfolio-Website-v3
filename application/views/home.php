@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col" id="headshotContainer">
-                <img src="<?= config_item('base_uri') ?>assets/img/headshot.png" alt="Picture of Patrick" id="headshot">
+                <p><img src="<?= config_item('base_uri') ?>assets/img/headshot.png" alt="Picture of Patrick" id="headshot"></p>
             </div>
             <div class="col-10" id="bio__text">
                 <p class="lgFont">Hello, I'm Patrick.</p>
@@ -27,18 +27,18 @@
             </div>
         </div>
         <div class="row g-5">
-            <div class="col">
+            <div class="col-12 col-md">
             <p class="employer lgFont bold">Indiana University Health<br/>
                 <span class="title noStyle lgFont">Fullstack Developer</span></p>
                 <p class="jobDesc">I worked with Dr. Larry Cripe and a team to develop a webapp that walks patients and their families through the cancer treatment process to get them more involved in the decision making process. To help Dr. Cripe fulfill his vision, we rapidly developed prototypes on a weekly basis to present for feedback.</p>
             </div>
-            <div class="col">
+            <div class="col-12 col-md">
             <p class="employer lgFont bold">Indiana University<br/>
                 <span class="title noStyle lgFont">Front-End Developer</span></p>
                 <p class="jobDesc">I designed and developed a WordPress website for the Diversity, Equity, and Equality Working Group at the School of Informatics and Computing at IUPUI. The DEI Working Group and I worked closely together with weekly meetings for feedback to ensure the website would help them to promote their goals to the rest of the faculty and student body.</p>
                 <a href="https://web.archive.org/web/20220106224521/https://inclusion.soic.iupui.edu/" class="jobLink link--color link--underline" target="_blank">Web Archive Link</a>
             </div>
-            <div class="col">
+            <div class="col-12 col-md">
                 <p class="employer lgFont bold">Indianapolis Ambassadors<br/>
                 <span class="title noStyle lgFont">Web Administrator</span></p>
                 <p class="jobDesc">I helped to develop and upkeep a WordPress website for the Indianapolis Ambassadors non-profit that they use to communicate with members and work with local organizations in need of volunteers. I managed the website, its hosting service, and email service to ensure their daily operations remained functional.</p>

@@ -1,6 +1,6 @@
 *{
     font-family: 'Montserrat', sans-serif;
-    color: $text;
+    color: $text !important;
     font-size: $mediumFont;
     &::selection{
         background-color: #BBA4E5;
@@ -15,7 +15,10 @@ body{
 }
 
 #bodyContainer{
-    padding: 0 $side-padding
+    padding: 0 $side-padding;
+    @media(max-width: $mobile-max){
+        padding: 0 $side-padding-mobile;
+    }
 }
 
 a{
@@ -28,6 +31,9 @@ a{
 
 section{
     padding: $vertical-padding $side-padding;
+    @media(max-width: $mobile-max){
+        padding: $vertical-padding $side-padding-mobile;
+    }
 
     &:first-of-type{
         padding-top: calc($vertical-padding*1.7);
@@ -35,7 +41,7 @@ section{
 }
 
 .link--color{
-    color: $link
+    color: $link !important;
 }
 
 .link--underline{
@@ -51,7 +57,7 @@ section{
 }
 
 .dark{
-    background-color: $dark;
+    background-color: $dark !important;
 }
 
 .smFont{
