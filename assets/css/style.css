@@ -173,11 +173,11 @@ footer {
 .contactLink {
   padding: 0 0.75rem;
 }
+.contactLink:hover i {
+  color: #EFD079 !important;
+}
 .contactLink i {
   font-size: 20px;
-}
-.contactLink i:hover {
-  color: #EFD079;
 }
 
 #bio {

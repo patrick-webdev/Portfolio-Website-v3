@@ -16,11 +16,13 @@ footer{
 .contactLink{
     padding: 0 .75rem;
 
-    i{
-        font-size: $largeFont;
+    &:hover{
+        i{
+            color: $link !important;
+        }
     }
 
-    i:hover{
-        color: $link;
+    i{
+        font-size: $largeFont;
     }
 }
