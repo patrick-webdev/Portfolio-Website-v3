@@ -47,7 +47,7 @@
                 foreach($projects as $project){
                     ?>
                     <div class='col-12 col-md-6'>
-                        <a href="<?=$project["url"]?>" target="_bank" class="noStyle">
+                        <a href="<?=$project['url']?>" target="_bank" class="noStyle">
                             <?php
                                 echo "<div class='project' data-tags='";
                                 foreach($project[0] as $index=>$tag){
