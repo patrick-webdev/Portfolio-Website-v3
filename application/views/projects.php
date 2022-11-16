@@ -47,26 +47,28 @@
                 foreach($projects as $project){
                     ?>
                     <div class='col-12 col-md-6'>
-                        <?php
-                            echo "<div class='project' data-tags='";
-                            foreach($project[0] as $index=>$tag){
-                                echo $tag . "|";
-                            }
-                            echo "'>";
-                        ?>
-                            <p class='project__title lgFont'><?=$project["title"]?></p>
-                            <p class='project__desc'><?=$project["description"]?></p>
-                            <p class="project__tags">Tags: 
-                                <?php
-                                    foreach($project[0] as $index=>$tag){
-                                        echo $tag;
-                                        if($index!=count($project[0])-1) echo ", ";
-                                    }
-                                    if(count($project[0])==0) echo "N/A";
-                                ?>
-                            </p>
-                            <p class='project__seeMore'><a href="<?=$project["url"]?>" class='link--color' target='_blank'>See more...</a></p>
-                        </div>
+                        <a href="<?=$project["url"]?>" target="_bank" class="noStyle">
+                            <?php
+                                echo "<div class='project' data-tags='";
+                                foreach($project[0] as $index=>$tag){
+                                    echo $tag . "|";
+                                }
+                                echo "'>";
+                            ?>
+                                <p class='project__title lgFont'><?=$project["title"]?></p>
+                                <p class='project__desc'><?=$project["description"]?></p>
+                                <p class="project__tags">Tags: 
+                                    <?php
+                                        foreach($project[0] as $index=>$tag){
+                                            echo $tag;
+                                            if($index!=count($project[0])-1) echo ", ";
+                                        }
+                                        if(count($project[0])==0) echo "N/A";
+                                    ?>
+                                </p>
+                                <p class='project__seeMore link--color underline'>See more...</p>
+                            </div>
+                        </a>
                     </div>
 
                     <?php
