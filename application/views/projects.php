@@ -32,7 +32,7 @@
             <div class="col">
                 <form id="searchBar">
                     <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input type="text" placeholder="Search..." class="mdFont" oninput="searchProjects(this.value)">
+                    <input type="text" placeholder="Search by name or a tag..." class="mdFont" oninput="searchProjects(this.value)">
                 </form>
             </div>
         </div>
@@ -45,14 +45,31 @@
         <div class="row">
             <?php
                 foreach($projects as $project){
-                    echo "<div class='col-12 col-md-6'>";
-                    echo "<div class='project' data-tags='";
-                    foreach($project[0] as $tag){ echo $tag . "|";}
-                    echo "'>";
-                    echo "<p class='project__title lgFont'>" . $project["title"] . "</p>";
-                    echo "<p class='project__desc'>" . $project["description"] . "</p>";
-                    echo "<p class='project__seeMore'><a href='" . $project["url"] . "' class='link--color' target='_blank'>See more...</a></p>";
-                    echo "</div></div>";
+                    ?>
+                    <div class='col-12 col-md-6'>
+                        <?php
+                            echo "<div class='project' data-tags='";
+                            foreach($project[0] as $index=>$tag){
+                                echo $tag . "|";
+                            }
+                            echo "'>";
+                        ?>
+                            <p class='project__title lgFont'><?=$project["title"]?></p>
+                            <p class='project__desc'><?=$project["description"]?></p>
+                            <p class="project__tags">Tags: 
+                                <?php
+                                    foreach($project[0] as $index=>$tag){
+                                        echo $tag;
+                                        if($index!=count($project[0])-1) echo ", ";
+                                    }
+                                    if(count($project[0])==0) echo "N/A";
+                                ?>
+                            </p>
+                            <p class='project__seeMore'><a href="<?=$project["url"]?>" class='link--color' target='_blank'>See more...</a></p>
+                        </div>
+                    </div>
+
+                    <?php
                 }
             ?>
         </div>
