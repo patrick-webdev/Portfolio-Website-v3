@@ -56,19 +56,25 @@
         </div>
         <div class="row g-5">
             <div class="col">
-                <img src="<?= config_item('base_uri') ?>assets/img/travelfly.jpg" alt="Travelfly Preview" class="featuredProjects__img">
+                <div class="featuredProjects__imgContainer d-flex d-sm-block">
+                    <img src="<?= config_item('base_uri') ?>assets/img/travelfly.jpg" alt="Travelfly Preview" class="featuredProjects__img">
+                </div>
                 <p class="featuredProjects__name bold lgFont">Travelfly</p>
                 <p class="featuredProjects_desc">The front-end of a mock travel agency website and a recreation of a design by Mujtaba Murtaza.</p>
                 <a href="#" class="link--color link--underline" target="_blank">Website Link</a>
             </div>
             <div class="col">
-                <img src="<?= config_item('base_uri') ?>assets/img/studentprojectportal.png" alt="Travelfly Preview" class="featuredProjects__img">
+                <div class="featuredProjects__imgContainer d-flex d-sm-block">
+                    <img src="<?= config_item('base_uri') ?>assets/img/studentprojectportal.png" alt="Travelfly Preview" class="featuredProjects__img">
+                </div>
                 <p class="featuredProjects__name bold lgFont">Student Project Portal</p>
                 <p class="featuredProjects_desc">A website for students to easily create, manage, chat, and collaborate within groups on projects.</p>
                 <a href="#" class="link--color link--underline" target="_blank">Website Link</a>
             </div>
             <div class="col">
-                <img src="<?= config_item('base_uri') ?>assets/img/envirometal.png" alt="Travelfly Preview" class="featuredProjects__img">
+                <div class="featuredProjects__imgContainer d-flex d-sm-block">
+                    <img src="<?= config_item('base_uri') ?>assets/img/envirometal.png" alt="Travelfly Preview" class="featuredProjects__img">
+                </div>
                 <p class="featuredProjects__name bold lgFont">EnviroMetal</p>
                 <p class="featuredProjects_desc">A 2D action platformer created with Godot for <a href="https://itch.io/jam/my-first-game-jam-winter-2022" class="link--color" target="_blank">My First Game Jam: Winter 2022</a> that I acted as the Creative Lead for.</p>
                 <a href="https://daltonsw.itch.io/envirometal" class="link--color link--underline" target="_blank">Available on Itch</a>

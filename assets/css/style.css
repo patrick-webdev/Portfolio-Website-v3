@@ -220,7 +220,12 @@ footer {
   display: contents;
 }
 
-#featuredProjects img {
+#featuredProjects .featuredProjects__imgContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#featuredProjects .featuredProjects__imgContainer img {
   height: 333px;
   width: 333px;
   -o-object-fit: cover;
