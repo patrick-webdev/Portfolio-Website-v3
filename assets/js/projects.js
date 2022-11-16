@@ -16,6 +16,8 @@ function searchProjects(terms){
         terms = terms.toUpperCase();
         if(projName.search(terms)==-1){
             projects[i].parentElement.style.display = "none";
+        }else{
+            projects[i].parentElement.style.display = "block";
         }
     }
 
