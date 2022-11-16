@@ -3,12 +3,18 @@
         <div class="row">
             <?php
                 foreach($projects as $project){
-                    echo "<div class='col-12 col-md-6'>";
-                    echo "<div class='project'>";
-                    echo "<p class='project__title lgFont'>" . $project["title"] . "</p>";
-                    echo "<p class='project__desc'>" . $project["description"] . "</p>";
-                    echo "<p class='project__seeMore'><a href='" . $project["url"] . "' class='link--color' target='_blank'>See more...</a></p>";
-                    echo "</div></div>";
+                    ?>
+                    <div class='col-12 col-md-6'>
+                        <a href="<?=$project["url"]?>" target="_bank" class="noStyle">
+                            <div class='project'>
+                                <p class='project__title lgFont'><?=$project["title"]?></p>
+                                <p class='project__desc'><?=$project["description"]?></p>
+                                <p class='project__seeMore link--color underline'>See more...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <?php
                 }
             ?>
         </div>
