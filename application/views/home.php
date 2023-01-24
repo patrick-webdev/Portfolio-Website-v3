@@ -61,7 +61,7 @@
                 </div>
                 <p class="featuredProjects__name bold lgFont">Travelfly</p>
                 <p class="featuredProjects_desc">The front-end of a mock travel agency website and a recreation of a design by Mujtaba Murtaza.</p>
-                <a href="#" class="link--color link--underline" target="_blank">Website Link</a>
+                <a href="https://patrickdcaldwell.com/localprojects/travelfly/index.html" class="link--color link--underline" target="_blank">Website Link</a>
             </div>
             <div class="col">
                 <div class="featuredProjects__imgContainer d-flex d-sm-block">
@@ -69,7 +69,7 @@
                 </div>
                 <p class="featuredProjects__name bold lgFont">Student Project Portal</p>
                 <p class="featuredProjects_desc">A website for students to easily create, manage, chat, and collaborate within groups on projects.</p>
-                <a href="#" class="link--color link--underline" target="_blank">Website Link</a>
+                <a href="https://patrickdcaldwell.com/localprojects/studentprojectportal/index.php/" class="link--color link--underline" target="_blank">Website Link</a>
             </div>
             <div class="col">
                 <div class="featuredProjects__imgContainer d-flex d-sm-block">
